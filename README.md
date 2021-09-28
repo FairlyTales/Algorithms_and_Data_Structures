@@ -1,2 +1,3 @@
-# Algorythms-in-JavaScript
-Sort, search, recursion, sets, greedy and dynamic algorythms in JavaScript
+# Algorithms
+
+Diving into sort, search, recursion, sets, greedy and dynamic algorythms in JavaScript

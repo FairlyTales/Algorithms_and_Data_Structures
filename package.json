@@ -1,0 +1,21 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Diving into sort, search, recursion, sets, greedy and dynamic algorithms in TypeScript",
+  "main": "script.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/script.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FairlyTales/Algorithms_in_JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FairlyTales/Algorithms_in_JavaScript/issues"
+  },
+  "homepage": "https://github.com/FairlyTales/Algorithms_in_JavaScript#readme"
+}

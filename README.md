@@ -1,3 +1,3 @@
 # Algorithms
 
-Diving into sort, search, recursion, sets, greedy and dynamic algorithms in TypeScript
+Diving into math, sorting, search, recursion, sets, greedy, knapsack algorithms and dynamic programming in TypeScript

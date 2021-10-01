@@ -79,6 +79,7 @@
   },
   "exclude": [
     "math_algorithms",
-    "recursion_and_dynamic_programming"
+    "recursion_and_dynamic_programming",
+    "search_algorithms"
   ]
 }

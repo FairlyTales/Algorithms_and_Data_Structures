@@ -80,6 +80,8 @@
   "exclude": [
     "math_algorithms",
     "recursion_and_dynamic_programming",
-    "search_algorithms"
+    "search_algorithms",
+    "sorting_algorithms",
+    "sets_algorithms"
   ]
 }

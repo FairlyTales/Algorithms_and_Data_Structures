@@ -84,6 +84,7 @@
     "sorting_algorithms",
     "sets_algorithms",
     "knapsack_algorithms",
-    "change_making_algorithms"
+    "change_making_algorithms",
+    "data_structures"
   ]
 }

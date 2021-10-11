@@ -21,6 +21,9 @@ interface LinkedListInterface {
 
   // convert linked list to array
   toArray(): ListNode[];
+
+  // reverse the linked list
+  reverseList(): void;
 }
 
 class LinkedList implements LinkedListInterface {
@@ -109,27 +112,74 @@ class LinkedList implements LinkedListInterface {
 
     return arr;
   }
+
+  reverseList(): void {
+    if (this.head) {
+      const previousHead = this.head;
+      const previousTail = this.tail;
+
+      let currentNode = this.head;
+      let previousNode = null;
+
+      // this pointer is used to move through the list
+      let nextNode = currentNode.next;
+
+      while (nextNode) {
+        // update the pointer to the next node (to move through the list)
+        nextNode = currentNode.next;
+
+        // update the pointer to the next node stored in the current node
+        currentNode.next = previousNode;
+
+        // update the stored links to the previous and the current nodes
+        // to continue moving through the list
+        if (nextNode) {
+          previousNode = currentNode;
+          currentNode = nextNode;
+        }
+
+        // if we are at the end of the list (nextNode === null) we swap
+        // the head and the tail pointers of the list object
+        this.head = previousTail;
+        this.tail = previousHead;
+      }
+    } else {
+      throw new Error("No elements in the list");
+    }
+  }
 }
 
 const list = new LinkedList();
 
-list.append("lol3");
-list.append("lol4");
-list.append("lol5");
-list.append("lol6");
-list.prepend("lol2");
-list.prepend("lol1");
+// add node to the list
+list.append("3");
+list.append("4");
+list.append("5");
+list.append("6");
+list.prepend("2");
+list.prepend("1");
 
+console.log("Default list:");
 console.table(list);
 
-console.log("\narray from linked list:");
+// reverse the array order
+console.log("\nList before reverse (array view):");
 console.table(list.toArray());
 
+list.reverseList();
+
+console.log("\nList after reverse (array view):");
+console.table(list.toArray());
+
+// pop and shift methods
 const removedWithShift = list.shift();
 const removedWithPop = list.pop();
 
-console.log("\nelement removed with shift:");
+console.log("\nElement removed with shift:");
 console.log(removedWithShift);
 
-console.log("\nelement removed with pop:");
+console.log("\nElement removed with pop:");
 console.log(removedWithPop);
+
+console.log("\nList after removing the first and the last nodes:");
+console.table(list.toArray());

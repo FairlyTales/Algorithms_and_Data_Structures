@@ -9,8 +9,7 @@ function fibonacci(elementPosition: number): number {
 
   return (
     // recursive call which is reeeeeeeeealy bad from a performance perspective
-    fibonacci(elementPosition - 1) +
-    fibonacci(elementPosition - 2)
+    fibonacci(elementPosition - 1) + fibonacci(elementPosition - 2)
   );
 }
 

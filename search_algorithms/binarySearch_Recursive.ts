@@ -14,7 +14,7 @@ function binarySearch_Recursive(
   // if searched element bigger than biggest array element or smaller
   // than the smallest array element -> searched element isn't in the array
   if (element > arr[endIndex] || element < arr[startIndex]) {
-    return "Error, no such element in an array. Searched element is outside of an array";
+    return 'Error, no such element in an array. Searched element is outside of an array';
   }
 
   // Math.floor to round down the middle index if array has uneven number of elements
@@ -25,7 +25,7 @@ function binarySearch_Recursive(
   } else if (arr.length === 1) {
     // if middle element is the last one in the reduced array and it's not the
     // required element -> searched element isn't in the array
-    return "Error, no such element in the array";
+    return 'Error, no such element in the array';
   }
 
   if (element > arr[middleIndex]) {
@@ -46,14 +46,14 @@ function binarySearch_Recursive(
 // input array must be sorted before provided to the binary search algorithm
 const array = [-15, 2, 7, 44, 74, 123, 1000, 1122, 5636];
 
-console.log("Should return error: " + binarySearch_Recursive(array, -10000));
-console.log("Should return 0: " + binarySearch_Recursive(array, -15));
-console.log("Should return 1: " + binarySearch_Recursive(array, 2));
-console.log("Should return 2: " + binarySearch_Recursive(array, 7));
-console.log("Should return 3: " + binarySearch_Recursive(array, 44));
-console.log("Should return 4: " + binarySearch_Recursive(array, 74));
-console.log("Should return 5: " + binarySearch_Recursive(array, 123));
-console.log("Should return 5: " + binarySearch_Recursive(array, 1000));
-console.log("Should return 5: " + binarySearch_Recursive(array, 1122));
-console.log("Should return 5: " + binarySearch_Recursive(array, 5636));
-console.log("Should return error: " + binarySearch_Recursive(array, 10000));
+console.log('Should return error: ' + binarySearch_Recursive(array, -10000));
+console.log('Should return 0: ' + binarySearch_Recursive(array, -15));
+console.log('Should return 1: ' + binarySearch_Recursive(array, 2));
+console.log('Should return 2: ' + binarySearch_Recursive(array, 7));
+console.log('Should return 3: ' + binarySearch_Recursive(array, 44));
+console.log('Should return 4: ' + binarySearch_Recursive(array, 74));
+console.log('Should return 5: ' + binarySearch_Recursive(array, 123));
+console.log('Should return 5: ' + binarySearch_Recursive(array, 1000));
+console.log('Should return 5: ' + binarySearch_Recursive(array, 1122));
+console.log('Should return 5: ' + binarySearch_Recursive(array, 5636));
+console.log('Should return error: ' + binarySearch_Recursive(array, 10000));

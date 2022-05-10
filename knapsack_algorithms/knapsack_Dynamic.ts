@@ -107,9 +107,9 @@ function knapsack_Dynamic(items: ItemList, capacity: number) {
 //
 
 const items: ItemList = [
-  { name: "a", value: 3, weight: 8 },
-  { name: "b", value: 6, weight: 4 },
-  { name: "c", value: 10, weight: 3 },
+  { name: 'a', value: 3, weight: 8 },
+  { name: 'b', value: 6, weight: 4 },
+  { name: 'c', value: 10, weight: 3 },
 ];
 const maxCapacity = 12;
 

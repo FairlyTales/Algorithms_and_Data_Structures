@@ -10,7 +10,7 @@ function calculateFactorial(num: number): number {
 }
 
 // should return 6
-console.log("Factorial of 3: " + calculateFactorial(3));
+console.log('Factorial of 3: ' + calculateFactorial(3));
 
 // should return 120
-console.log("Factorial of 5: " + calculateFactorial(5));
+console.log('Factorial of 5: ' + calculateFactorial(5));

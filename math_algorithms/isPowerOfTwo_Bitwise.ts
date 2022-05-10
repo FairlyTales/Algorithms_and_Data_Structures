@@ -1,5 +1,5 @@
 // O(1)
-function isPowerOfTwo_Bitwise(num: number):boolean {
+function isPowerOfTwo_Bitwise(num: number): boolean {
   if (!Number.isInteger(num) || num < 1) return false;
 
   // since any power of 2 minus 1 is all ones in binary system, i.e.:

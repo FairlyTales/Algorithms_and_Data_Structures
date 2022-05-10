@@ -1,5 +1,5 @@
-const DESCENDING = "descending";
-const ASCENDING = "ascending";
+const DESCENDING = 'descending';
+const ASCENDING = 'ascending';
 type SortingOrder = typeof ASCENDING | typeof DESCENDING;
 
 // O(n * log(n)) - best case (if array is completely random)
@@ -58,8 +58,8 @@ function quickSort(
 const array = [6, -43, 12, 54, 823, 324, -345, 85];
 
 // spread operators are used in these logs to log the results in a single line
-console.log("Should return: \n-345,-43,6,12,54,85,324,823");
+console.log('Should return: \n-345,-43,6,12,54,85,324,823');
 console.log(...quickSort(array, ASCENDING));
 
-console.log("Should return: \n823,324,85,54,12,6,-43,-345");
+console.log('Should return: \n823,324,85,54,12,6,-43,-345');
 console.log(...quickSort(array, DESCENDING));

@@ -16,9 +16,7 @@ function reverseStringUnshift(string: string): string {
 function reverseStringReduce(string: string): string {
   const arr = string.split('');
 
-  return arr.reduce((reversedString, char) => (
-    char + reversedString
-  ), '')
+  return arr.reduce((reversedString, char) => char + reversedString, '');
 }
 
 // O(n) - there is actually no need to transform the string into the array

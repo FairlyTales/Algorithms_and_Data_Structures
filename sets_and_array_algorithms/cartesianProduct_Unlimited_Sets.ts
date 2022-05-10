@@ -40,9 +40,9 @@ function cartesianProduct_Unlimited_Sets(
   return finalSet;
 }
 
-const setA = ["A-1", "A-2", "A-3"];
-const setB = ["B-1", "B-2", "B-3", "B-4"];
-const setC = ["C-1", "C-2", "C-3", "C-4", "C-5"];
+const setA = ['A-1', 'A-2', 'A-3'];
+const setB = ['B-1', 'B-2', 'B-3', 'B-4'];
+const setC = ['C-1', 'C-2', 'C-3', 'C-4', 'C-5'];
 
 // here the time complexity is: O(n^x) -> O(n^3)
 console.log(cartesianProduct_Unlimited_Sets(setA, setB, setC));

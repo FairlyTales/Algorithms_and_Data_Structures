@@ -43,6 +43,6 @@ function calcPermutation_NoRepetition(elements: string[]): PermutationsArray {
   return helperPermutationsArray;
 }
 
-const values = ["A", "B", "C", "D", "E"];
+const values = ['A', 'B', 'C', 'D', 'E'];
 
 console.table(calcPermutation_NoRepetition(values));

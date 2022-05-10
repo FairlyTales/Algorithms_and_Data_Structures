@@ -33,9 +33,9 @@ function mergeSort(inputArray: number[]): number[] {
   // correct order by comparing them at each step
   while (
     // run the loop until all indexes are checked
-  leftArrayIndex < leftSortedArray.length ||
-  rightArrayIndex < rightSortedArray.length
-    ) {
+    leftArrayIndex < leftSortedArray.length ||
+    rightArrayIndex < rightSortedArray.length
+  ) {
     if (
       leftArrayIndex >= leftSortedArray.length ||
       leftSortedArray[leftArrayIndex] > rightSortedArray[rightArrayIndex]
@@ -54,8 +54,8 @@ function mergeSort(inputArray: number[]): number[] {
 const array = [6, -43, 12, 54, 823, 324, -345, 85];
 
 // spread operators are used in these logs to log the results in a single line
-console.log("Should return: \n-345,-43,6,12,54,85,324,823");
+console.log('Should return: \n-345,-43,6,12,54,85,324,823');
 console.log(...mergeSort(array));
 
-console.log("Should return: \n823,324,85,54,12,6,-43,-345");
+console.log('Should return: \n823,324,85,54,12,6,-43,-345');
 console.log(...mergeSort(array));

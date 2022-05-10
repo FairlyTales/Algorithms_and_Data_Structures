@@ -17,10 +17,10 @@ function isPrimeNumber(n: number) {
 }
 
 // should return true
-console.log("5 is a prime number: " + isPrimeNumber(5));
+console.log('5 is a prime number: ' + isPrimeNumber(5));
 
 // should return false
-console.log("9 is a prime number: " + isPrimeNumber(9));
+console.log('9 is a prime number: ' + isPrimeNumber(9));
 
 // should return true
-console.log("2147483647 is a prime number: " + isPrimeNumber(2147483647));
+console.log('2147483647 is a prime number: ' + isPrimeNumber(2147483647));

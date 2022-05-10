@@ -8,11 +8,11 @@ function linearSearch_Cycle(arr: number[], element: number): string {
     }
   }
 
-  return "No such number in an array";
+  return 'No such number in an array';
 }
 
 const array = [2, 7, 123, 74, 865, -15, 44];
 
-console.log("should return 3: " + linearSearch_Cycle(array, 74));
+console.log('should return 3: ' + linearSearch_Cycle(array, 74));
 
-console.log("should return 6: " + linearSearch_Cycle(array, 44));
+console.log('should return 6: ' + linearSearch_Cycle(array, 44));

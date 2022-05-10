@@ -24,7 +24,7 @@ function isPowerOfTwo(num: number): boolean {
 }
 
 // should return true
-console.log("Cycle 16: " + isPowerOfTwo(16));
+console.log('Cycle 16: ' + isPowerOfTwo(16));
 
 // should return false
-console.log("Cycle 45: " + isPowerOfTwo(45));
+console.log('Cycle 45: ' + isPowerOfTwo(45));

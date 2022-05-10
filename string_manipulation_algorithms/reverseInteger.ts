@@ -2,7 +2,9 @@
 
 // O(n)
 function reverseInteger(integer: number): number {
-  const reversedInt = Number(integer.toString().replace('-', '').split('').reverse().join(''));
+  const reversedInt = Number(
+    integer.toString().replace('-', '').split('').reverse().join('')
+  );
 
   return Math.sign(integer) * reversedInt;
 }

@@ -22,7 +22,7 @@ function cartesianProduct_Two_Sets(
   return calculatedSet;
 }
 
-const setA = ["A-1", "A-2", "A-3"];
-const setB = ["B-1", "B-2", "B-3", "B-4"];
+const setA = ['A-1', 'A-2', 'A-3'];
+const setB = ['B-1', 'B-2', 'B-3', 'B-4'];
 
 console.log(cartesianProduct_Two_Sets(setA, setB));

@@ -144,7 +144,7 @@ class LinkedList implements LinkedListInterface {
         this.tail = previousHead;
       }
     } else {
-      throw new Error("No elements in the list");
+      throw new Error('No elements in the list');
     }
   }
 }
@@ -152,34 +152,34 @@ class LinkedList implements LinkedListInterface {
 const list = new LinkedList();
 
 // add node to the list
-list.append("3");
-list.append("4");
-list.append("5");
-list.append("6");
-list.prepend("2");
-list.prepend("1");
+list.append('3');
+list.append('4');
+list.append('5');
+list.append('6');
+list.prepend('2');
+list.prepend('1');
 
-console.log("Default list:");
+console.log('Default list:');
 console.table(list);
 
 // reverse the array order
-console.log("\nList before reverse (array view):");
+console.log('\nList before reverse (array view):');
 console.table(list.toArray());
 
 list.reverseList();
 
-console.log("\nList after reverse (array view):");
+console.log('\nList after reverse (array view):');
 console.table(list.toArray());
 
 // pop and shift methods
 const removedWithShift = list.shift();
 const removedWithPop = list.pop();
 
-console.log("\nElement removed with shift:");
+console.log('\nElement removed with shift:');
 console.log(removedWithShift);
 
-console.log("\nElement removed with pop:");
+console.log('\nElement removed with pop:');
 console.log(removedWithPop);
 
-console.log("\nList after removing the first and the last nodes:");
+console.log('\nList after removing the first and the last nodes:');
 console.table(list.toArray());

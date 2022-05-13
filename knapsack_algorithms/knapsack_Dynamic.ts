@@ -90,8 +90,7 @@ function knapsack_Dynamic(items: ItemList, capacity: number) {
     return resultSack;
   }
 
-  // create a memo - a 2d array filled with undefined values, we will fill it
-  // sack
+  // create a memo - a 2d array filled with undefined values, we will fill it a sack
   const memo: MemoizedArray = Array.from(Array(capacity + 1), () =>
     Array(items.length).fill(undefined)
   );

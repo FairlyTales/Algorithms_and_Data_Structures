@@ -5,7 +5,7 @@ type CartesianProduct = Array<[string, string]>;
 
 // O(n * m) - where n and m are the numbers of elements in the first and second
 // sets respectively, we can assume that in the worst case the length of the
-// each set will be equal to the length of the longest set, in this case:
+// set will be equal to the length of the longest set, in this case:
 // O(n^2)
 function cartesianProduct_Two_Sets(
   setA: string[],

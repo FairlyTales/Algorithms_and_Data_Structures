@@ -11,7 +11,7 @@ function binarySearch_Recursive(
   let startIndex = 0;
   let endIndex = arr.length - 1; // - 1 because first index is 0
 
-  // if searched element bigger than biggest array element or smaller
+  // if searched element bigger than the biggest array element or smaller
   // than the smallest array element -> searched element isn't in the array
   if (element > arr[endIndex] || element < arr[startIndex]) {
     return 'Error, no such element in an array. Searched element is outside of an array';
@@ -23,7 +23,7 @@ function binarySearch_Recursive(
   if (element === arr[middleIndex]) {
     return middleIndex + offset;
   } else if (arr.length === 1) {
-    // if middle element is the last one in the reduced array and it's not the
+    // if middle element is the last one in the reduced array, and it's not the
     // required element -> searched element isn't in the array
     return 'Error, no such element in the array';
   }

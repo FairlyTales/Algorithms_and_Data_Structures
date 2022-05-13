@@ -65,7 +65,7 @@ const targetValue = 66;
 console.table(calcChange_BruteForce(coinsValues, targetValue));
 
 // simple greedy algorithm fails on this set of coins/value but brute force
-// algorithm finds the correct soluction
+// algorithm finds the correct solution
 const coinsValues1 = [8, 6, 5, 2, 1];
 const targetValue1 = 11;
 console.table(calcChange_BruteForce(coinsValues1, targetValue1));

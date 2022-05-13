@@ -5,7 +5,7 @@ type SortingOrder = typeof ASCENDING | typeof DESCENDING;
 // O(n * log(n)) - best case (if array is completely random)
 // O(n * log(n)) - average case (because we probably won't get an already
 // sorted array to sort)
-// O(n^2) - worst case (if array is already sorted and we can't split array)
+// O(n^2) - worst case (if array is already sorted, and we can't split array)
 function quickSort(
   inputArray: number[],
   sortOrder: SortingOrder = ASCENDING

@@ -4,7 +4,7 @@ function isPowerOfTwo(num: number): boolean {
   if (!Number.isInteger(num) || num < 1) return false;
 
   // if the final (after all divisions) number is two, the provided number
-  // is a power of two and we will break out of the recursion
+  // is a power of two, and we will break out of the recursion
   if (num === 2) return true;
 
   if (num % 2 === 0) {

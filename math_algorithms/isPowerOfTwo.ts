@@ -7,7 +7,7 @@ function isPowerOfTwo(num: number): boolean {
   let iterationCounter = 0;
 
   while (dividedNumber !== 1) {
-    // if the number is no longer dividable by two and it's not
+    // if the number is no longer dividable by two, and it's not
     // one - it's not a power of two
     if (dividedNumber % 2 !== 0) {
       console.log(`Iterations: ${iterationCounter}`);

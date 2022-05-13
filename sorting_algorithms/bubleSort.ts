@@ -2,10 +2,10 @@ const DESCENDING = 'descending';
 const ASCENDING = 'ascending';
 type SortingOrder = typeof ASCENDING | typeof DESCENDING;
 
-// O(n) - best case (elements are already sorted and we go through the array without
-// going into the if check)
+// O(n) - best case (elements are already sorted, and we go through the array
+// without going into the if check)
 // O(n^2) - average case (we don't know the order of the array)
-// O(n^2) - worst case (elements are in a complete reverse order and we have to
+// O(n^2) - worst case (elements are in a complete reverse order, and we have to
 // swap them all)
 function bubbleSort(
   inputArray: number[],

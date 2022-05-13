@@ -14,7 +14,7 @@ type ItemList = Array<{
 
 // greedy algorithms like this one makes the best possible decision in every
 // step without thinking about the consequences, these algorithms are quite
-// fast to create and understand but they won't necessarily provide the best
+// fast to create and understand, but they won't necessarily provide the best
 // results and runtime.
 
 // here the best solution is to add items 'b' and 'c', but with the current

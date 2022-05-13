@@ -33,7 +33,7 @@ function calcChange_Greedy(coins: number[], amount: number) {
 }
 
 // with this set of coin values greedy algorithm gives a correct result
-const coinsValues = [100, 50, 20, 10, 5, 2, 1]; // array must be sorted in a descending order
+const coinsValues = [100, 50, 20, 10, 5, 2, 1]; // array must be sorted in descending order
 const targetValue = 66;
 console.table(calcChange_Greedy(coinsValues, targetValue));
 

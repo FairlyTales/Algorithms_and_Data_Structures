@@ -12,12 +12,12 @@ function deepClone(obj: any) {
   // iterate though all keys and either assign a primitive if the value in the
   // original object is a primitive or recursively call the clone function
   // if the value is an object
-  Object.keys(clone).forEach((key) => (
+  Object.keys(clone).forEach((key) => {
       clone[key] =
         typeof obj[key] === 'object' ?
           deepClone(obj[key]) :
-          obj[key]
-    ),
+          obj[key];
+    },
   );
 
   // if an object is an array set its length to that of the original and create

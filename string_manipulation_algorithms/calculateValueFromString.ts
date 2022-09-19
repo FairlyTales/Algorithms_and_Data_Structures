@@ -1,4 +1,4 @@
-// function should calculate value using the provided string with operands
+// function should calculate value using the provided string with operands and operators
 // examples are:
 // calc(7 2 * 3 +'); -> 7 * 2 + 3 = 17
 // calc('7 2 3 1 + * -'); -> 7 - 2 * (3 + 1) = -1

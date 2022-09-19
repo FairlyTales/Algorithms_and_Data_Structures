@@ -7,9 +7,9 @@
 // calc('7 2 3 1 * - - 3 5 + -'); -> 5 + 3 - (7- (2 - (3 * 1)) = 0
 //
 // incorrect strings are:
-// calc('1 1 + +'); -> Error in Syntax
-// calc('1 2 2 * -'); -> Error in Syntax
-// calc('1 b + c -')); -> Error in Syntax
+// calc('1 1 + +'); -> Error in Syntax - too many operators or not enough operands
+// calc('1 2 2 *'); -> Error in Syntax - too many operands or not enough operators
+// calc('1 b + c -')); -> Error in Syntax - only numbers and operators are allowed
 
 function calc(string: string): number {
   const elements = string.split(' ');

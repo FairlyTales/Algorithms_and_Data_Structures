@@ -1,6 +1,7 @@
 // calculate a running sum of an array, should return an array of numbers
 // leetcode #1480
 
+// O(n)
 function runningSum(nums: number[]): number[] {
   const result: number[] = [];
 

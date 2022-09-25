@@ -83,15 +83,15 @@
     /* Disallow inconsistently-cased references to the same file. */
   },
   "exclude": [
-    "math_algorithms",
+    "math",
     "recursion_and_dynamic_programming",
-    "search_algorithms",
-    "sorting_algorithms",
-    "sets_and_array_algorithms",
-    "knapsack_algorithms",
-    "change_making_algorithms",
+    "search",
+    "sorting",
+    "arrays_and_sets",
+    "knapsack",
+    "change_making",
     "data_structures",
-    "string_manipulation_algorithms",
+    "strings",
     "fizz_buzz"
   ]
 }
